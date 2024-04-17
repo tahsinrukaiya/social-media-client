@@ -1,5 +1,5 @@
 it("firstly visits the page by logging inn and then log out", () => {
-  cy.visit("http://127.0.0.1:8080/");
+  cy.visit("/");
   cy.wait(1000);
   cy.get(
     "#registerForm > div.modal-footer > button.btn-outline-success",

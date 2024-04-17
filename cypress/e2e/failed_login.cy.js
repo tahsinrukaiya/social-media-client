@@ -1,6 +1,6 @@
 describe("Failed login function", () => {
   it("visits the page and failing to log in", () => {
-    cy.visit("http://127.0.0.1:8080/");
+    cy.visit("/");
     cy.wait(1000);
     cy.get(
       "#registerForm > div.modal-footer > button.btn-outline-success",
