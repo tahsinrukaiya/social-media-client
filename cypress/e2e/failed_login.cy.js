@@ -5,7 +5,7 @@ describe("Failed login function", () => {
     cy.get(
       "#registerForm > div.modal-footer > button.btn-outline-success",
     ).click();
-    cy.get("#loginEmail").invoke("val", "wrongAMail@noroff.no");
+    cy.get("#loginEmail").invoke("val", "wrongMail@noroff.no");
     cy.get("#loginPassword").invoke("val", "wrongPassword");
     cy.get("#loginForm button").contains("Login").click();
     cy.on("window:alert", (alert) => {
